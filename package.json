@@ -5,7 +5,8 @@
   "module": "dist/index.es.js",
   "files": [
     "dist",
-    "rollup.config.js"
+    "rollup.config.js",
+    "tsconfig.json"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
