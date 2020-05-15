@@ -3,17 +3,10 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "files": [
-    "dist"
-  ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run build && git add ."
-    }
+    "build": "rollup -c",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "rollup": "^2.10.2",
