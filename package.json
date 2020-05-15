@@ -1,0 +1,19 @@
+{
+  "name": "interfaces",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "rollup": "^2.10.2",
+    "typescript": "^3.9.2",
+    "rollup-plugin-typescript2": "0.27.1"
+  }
+}
