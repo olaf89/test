@@ -8,10 +8,9 @@
     "build": "rollup -c",
     "postinstall": "npm run build"
   },
-  "devDependencies": {
+  "dependencies": {
     "rollup": "^2.10.2",
     "typescript": "^3.9.2",
-    "rollup-plugin-typescript2": "0.27.1",
-    "husky": "4.2.5"
+    "rollup-plugin-typescript2": "0.27.1"
   }
 }
