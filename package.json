@@ -4,18 +4,22 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
-    "dist",
-    "rollup.config.js",
-    "tsconfig.json"
+    "dist"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "postinstall": "npm run build"
   },
-  "dependencies": {
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  },
+  "devDependencies": {
     "rollup": "^2.10.2",
     "typescript": "^3.9.2",
-    "rollup-plugin-typescript2": "0.27.1"
+    "rollup-plugin-typescript2": "0.27.1",
+    "husky": "4.2.5"
   }
 }
