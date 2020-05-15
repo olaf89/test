@@ -8,8 +8,7 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c",
-    "postinstall": "npm run build"
+    "build": "rollup -c"
   },
   "husky": {
     "hooks": {
