@@ -8,7 +8,8 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "rollup": "^2.10.2",
